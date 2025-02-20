@@ -16,7 +16,7 @@ SELECT
         ,LEFT(Games, CHARINDEX(' ', Games) - 1) AS 'Year' 
         ,RIGHT(Games,CHARINDEX(' ', REVERSE(Games))-1) AS 'Season' 
         ,[Games]
-        ,[City] 
+--        ,[City] 
         ,[Sport]
         ,[Event]
         ,CASE WHEN Medal = 'NA' THEN 'Not Registered' ELSE Medal END AS Medal 
